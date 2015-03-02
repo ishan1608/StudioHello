@@ -4,12 +4,3 @@
 /.idea/libraries
 .DS_Store
 /build
-.idea/
-StudioHello.iml
-build.gradle
-gradle.properties
-gradle/
-gradlew
-gradlew.bat
-settings.gradle
-
