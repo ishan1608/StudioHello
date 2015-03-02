@@ -23,11 +23,19 @@ public class MainActivity extends Activity {
         leftDrawer = (FrameLayout) findViewById(R.id.left_drawer);
         rightDrawer = (LinearLayout) findViewById(R.id.right_drawer);
 
+        // Setting the tags for the drawers
+        leftDrawer.setTag("left");
+        rightDrawer.setTag("right");
+
         // Handling on slide
         mainDrawerLayout.setDrawerListener(new DrawerLayout.DrawerListener() {
             @Override
             public void onDrawerSlide(View drawerView, float offset) {
-                mainContainer.setTranslationX(offset*drawerView.getWidth());
+                if (drawerView.getTag().toString().equalsIgnoreCase("left")) {
+                    mainContainer.setTranslationX(offset*drawerView.getWidth());
+                } else {
+                    mainContainer.setTranslationX(-offset*drawerView.getWidth());
+                }
             }
 
             @Override
