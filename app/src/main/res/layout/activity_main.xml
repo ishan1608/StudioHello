@@ -11,7 +11,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hello_studio"/>
+            android:text="@string/hello_studio"
+            android:textAppearance="@style/Greeting"/>
     </FrameLayout>
     <FrameLayout android:id="@+id/left_drawer"
         android:layout_width="240dp"
@@ -21,7 +22,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/first_drawer_greeting"/>
+            android:text="@string/first_drawer_greeting"
+            android:textAppearance="@style/Greeting"/>
         </FrameLayout>
     <LinearLayout android:id="@+id/right_drawer"
         android:orientation="vertical"
@@ -32,6 +34,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/second_drawer_greeting"/>
+            android:text="@string/second_drawer_greeting"
+            android:textAppearance="@style/Greeting"/>
         </LinearLayout>
 </android.support.v4.widget.DrawerLayout>
