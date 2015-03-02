@@ -1,0 +1,37 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff5a3541">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_studio"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="300dp"
+        android:layout_gravity="start"
+        android:background="#ffb18b2f">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_drawer_greeting"/>
+        </FrameLayout>
+    <LinearLayout android:id="@+id/right_drawer"
+        android:orientation="vertical"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="#ff33842d">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/second_drawer_greeting"/>
+        </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

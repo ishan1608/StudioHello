@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StudioHello</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_studio">Hello Studio</string>
+    <string name="first_drawer_greeting">First Drawer</string>
+    <string name="second_drawer_greeting">Second Drawer</string>
+</resources>
