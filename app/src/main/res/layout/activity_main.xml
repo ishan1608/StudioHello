@@ -17,7 +17,7 @@
     <FrameLayout android:id="@+id/left_drawer"
         android:layout_width="240dp"
         android:layout_height="300dp"
-        android:layout_gravity="start"
+        android:layout_gravity="left"
         android:background="#ffb18b2f">
         <TextView
             android:layout_width="wrap_content"
@@ -29,7 +29,7 @@
         android:orientation="vertical"
         android:layout_width="240dp"
         android:layout_height="match_parent"
-        android:layout_gravity="end"
+        android:layout_gravity="right"
         android:background="#ff33842d">
         <TextView
             android:layout_width="wrap_content"
