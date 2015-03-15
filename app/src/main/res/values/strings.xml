@@ -6,4 +6,28 @@
     <string name="hello_studio">Hello Studio</string>
     <string name="first_drawer_greeting">First Drawer</string>
     <string name="second_drawer_greeting">Second Drawer</string>
+    <string-array name="item_headings">
+        <item>Flights</item>
+        <item>Buses</item>
+        <item>Train</item>
+        <item>Holiday</item>
+        <item>Hotels</item>
+        <item>My Bookings</item>
+    </string-array>
+    <string-array name="item_descriptions">
+        <item>Book Flight</item>
+        <item>Book Buses</item>
+        <item>Check PNR Status</item>
+        <item>Holiday Package</item>
+        <item>Book Hotel</item>
+        <item>Your Booking</item>
+    </string-array>
+    <array name="item_images">
+        <item>@drawable/aeroplane</item>
+        <item>@drawable/buses</item>
+        <item>@drawable/train</item>
+        <item>@drawable/holiday</item>
+        <item>@drawable/hotel</item>
+        <item>@drawable/booking</item>
+    </array>
 </resources>

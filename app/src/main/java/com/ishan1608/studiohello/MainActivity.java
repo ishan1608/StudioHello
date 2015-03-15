@@ -6,11 +6,12 @@ import android.support.v4.widget.DrawerLayout;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 
 
 public class MainActivity extends Activity {
     DrawerLayout mainDrawerLayout;
-    FrameLayout mainContainer;
+    LinearLayout mainContainer;
     FrameLayout leftDrawer;
     LinearLayout rightDrawer;
     @Override
@@ -19,7 +20,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         // Handle for all four layouts
         mainDrawerLayout = (DrawerLayout) findViewById(R.id.main_drawer_layout);
-        mainContainer = (FrameLayout) findViewById(R.id.main_container);
+        mainContainer = (LinearLayout) findViewById(R.id.main_container);
         leftDrawer = (FrameLayout) findViewById(R.id.left_drawer);
         rightDrawer = (LinearLayout) findViewById(R.id.right_drawer);
 
@@ -54,5 +55,8 @@ public class MainActivity extends Activity {
             }
         });
 
+        // Populating the ListView
+        ListView itemsListView = (ListView) findViewById(R.id.items_list_view);
+        itemsListView.setAdapter(new ItemsAdapter(this));
     }
 }
