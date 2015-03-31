@@ -41,5 +41,43 @@
             android:layout_height="wrap_content"
             android:text="@string/second_drawer_greeting"
             android:textAppearance="@style/Greeting"/>
+        <!-- Container for the heading and content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Heading container. Can contain multiple views inside it. -->
+            <LinearLayout
+                android:id="@+id/headingContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#ffffc828">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heading"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aeroplane"/>
+                </LinearLayout>
+            <!-- Container for the togglable. Contains multiple views inside it. Default Visibility: gone -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffff9809"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Content"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/holiday"/>
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
 </android.support.v4.widget.DrawerLayout>

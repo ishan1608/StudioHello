@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -58,5 +59,26 @@ public class MainActivity extends Activity {
         // Populating the ListView
         ListView itemsListView = (ListView) findViewById(R.id.items_list_view);
         itemsListView.setAdapter(new ItemsAdapter(this));
+
+        // Setting toggler on the right drawer's contents
+        View headingView = findViewById(R.id.headingContainer);
+        headingView.setOnClickListener(new contentToggler());
+    }
+}
+
+class contentToggler implements View.OnClickListener {
+    @Override
+    public void onClick(View v) {
+        ViewGroup parent = (ViewGroup) v.getParent();
+        View childView = parent.getChildAt(parent.indexOfChild(v) + 1);
+        this.viewToggler(childView);
+    }
+
+    private void viewToggler(View view) {
+        if(view.getVisibility() == View.VISIBLE) {
+            view.setVisibility(View.GONE);
+        } else {
+            view.setVisibility(View.VISIBLE);
+        }
     }
 }
