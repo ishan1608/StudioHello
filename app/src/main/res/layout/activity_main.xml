@@ -19,9 +19,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>
-    <FrameLayout android:id="@+id/left_drawer"
+    <LinearLayout android:id="@+id/left_drawer"
         android:layout_width="240dp"
-        android:layout_height="300dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
         android:layout_gravity="left"
         android:background="#ffb18b2f">
         <TextView
@@ -29,7 +30,16 @@
             android:layout_height="wrap_content"
             android:text="@string/first_drawer_greeting"
             android:textAppearance="@style/Greeting"/>
-        </FrameLayout>
+        <TextView
+            android:id="@+id/passengers_count_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passengers : "/>
+        <NumberPicker
+            android:id="@+id/passengers_count_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
     <LinearLayout android:id="@+id/right_drawer"
         android:orientation="vertical"
         android:layout_width="240dp"
